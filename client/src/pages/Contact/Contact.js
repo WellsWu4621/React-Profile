@@ -1,25 +1,38 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import {
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Row,
+  Col
+} from 'reactstrap';
+import './Contact.css'
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <Form>
-      <h4>Contact Me</h4>
-      <hr></hr>
-      <FormGroup>
-        <Label for="name">Name</Label>
-        <Input type="name" name="name" id="name" placeholder="John Smith" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="email">Email</Label>
-        <Input type="email" name="email" id="email" placeholder="johnsmight@email.com" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="Text">Message</Label>
-        <Input type="textarea" name="text" id="Text" />
-      </FormGroup>
-      <Button>Submit</Button>
-    </Form>
+    <Row>
+      <Col sm="7" className='box'>
+        <Form>
+          <h4>Contact Me</h4>
+          <hr></hr>
+          <FormGroup className='inp'>
+            <Label for="name">Name</Label>
+            <Input type="name" name="name" id="name" placeholder="John Smith" />
+          </FormGroup>
+          <FormGroup className='inp'>
+            <Label for="email">Email</Label>
+            <Input type="email" name="email" id="email" placeholder="johnsmight@email.com" />
+          </FormGroup>
+          <FormGroup className='inp'>
+            <Label for="Text">Message</Label>
+            <Input type="textarea" name="text" id="Text" />
+          </FormGroup>
+          <Button className='submit' color="success">Submit</Button>
+        </Form>
+      </Col>
+    </Row >
   )
 }
 

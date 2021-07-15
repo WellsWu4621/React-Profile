@@ -7,11 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
 } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
@@ -19,6 +14,12 @@ const styles = {
   links: {
     textDecoration: 'none',
     color: 'inherit'
+  },
+  bar: {
+    marginBottom: 15,
+  },
+  brand: {
+    marginLeft: 25,
   }
 }
 
@@ -28,10 +29,10 @@ const Appbar = () => {
   const toggle = () => setIsOpen(!isOpen)
   return (
     <div>
-      <Navbar color='light' light expand='md'>
-        <NavbarBrand>
+      <Navbar dark expand='md' style={styles.bar}>
+        <NavbarBrand style={styles.brand}>
           <Link to='/' style={styles.links}>
-            Wells Wu
+            WW
           </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -39,7 +40,7 @@ const Appbar = () => {
           <Nav className='mr-auto' navbar>
             <NavItem>
               <NavLink>
-                <Link to='/about' style={styles.links}>
+                <Link to='/' style={styles.links}>
                   About
                 </Link>
               </NavLink>
