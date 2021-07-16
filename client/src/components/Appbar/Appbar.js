@@ -27,11 +27,12 @@ const Appbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => setIsOpen(!isOpen)
+
   return (
     <div>
       <Navbar dark expand='md' style={styles.bar}>
         <NavbarBrand style={styles.brand}>
-          <Link to='/' style={styles.links}>
+          <Link to='/about' style={styles.links}>
             WW
           </Link>
         </NavbarBrand>
@@ -40,22 +41,29 @@ const Appbar = () => {
           <Nav className='mr-auto' navbar>
             <NavItem>
               <NavLink>
-                <Link to='/' style={styles.links}>
+                <Link exact to='/about' activeClassName="active" style={styles.links}>
                   About
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to='/portfolio' style={styles.links}>
+                <Link exact to='/portfolio' activeClassName="active" style={styles.links}>
                   Portfolio
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to='/contact' style={styles.links}>
+                <Link to='/contact' activeClassName="active" style={styles.links}>
                   Contact
+                </Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Link to='/resume' activeClassName="active" style={styles.links}>
+                  Resume
                 </Link>
               </NavLink>
             </NavItem>

@@ -19,15 +19,15 @@ const Contact = (props) => {
           <hr></hr>
           <FormGroup className='inp'>
             <Label for="name">Name</Label>
-            <Input type="name" name="name" id="name" placeholder="John Smith" />
+            <Input required type="name" name="name" id="name" placeholder="John Smith" />
           </FormGroup>
           <FormGroup className='inp'>
             <Label for="email">Email</Label>
-            <Input type="email" name="email" id="email" placeholder="johnsmight@email.com" />
+            <Input required type="email" name="email" id="email" placeholder="johnsmight@email.com" />
           </FormGroup>
           <FormGroup className='inp'>
             <Label for="Text">Message</Label>
-            <Input type="textarea" name="text" id="Text" />
+            <Input required type="textarea" name="text" id="Text" />
           </FormGroup>
           <Button className='submit' color="success">Submit</Button>
         </Form>
