@@ -44,7 +44,9 @@
   },
   "description": "Personal professional website/portfolio made with react",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WellsWu4621/react-profile.git"
@@ -55,5 +57,5 @@
   "bugs": {
     "url": "https://github.com/WellsWu4621/react-profile/issues"
   },
-  "homepage": "http: //WellsWu4621.github.io/react-profile"
+  "homepage": "http://WellsWu4621.github.io/react-profile"
 }
