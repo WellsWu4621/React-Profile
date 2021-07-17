@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from 'react-router-dom'
 import Portfolio from './pages/Portfolio'
 import About from './pages/About'
@@ -15,7 +16,7 @@ const App = () => {
       <div>
         <Appbar />
         <Switch>
-          <Route exact path='/about'>
+          <Route path='/'>
             <About />
           </Route>
           <Route path='/portfolio'>

@@ -32,7 +32,7 @@ const Appbar = () => {
     <div>
       <Navbar dark expand='md' style={styles.bar}>
         <NavbarBrand style={styles.brand}>
-          <Link to='/about' style={styles.links}>
+          <Link to='/' style={styles.links}>
             WW
           </Link>
         </NavbarBrand>
@@ -41,14 +41,14 @@ const Appbar = () => {
           <Nav className='mr-auto' navbar>
             <NavItem>
               <NavLink>
-                <Link exact to='/about' activeClassName="active" style={styles.links}>
+                <Link to='/' activeClassName="active" style={styles.links}>
                   About
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link exact to='/portfolio' activeClassName="active" style={styles.links}>
+                <Link to='/portfolio' activeClassName="active" style={styles.links}>
                   Portfolio
                 </Link>
               </NavLink>
