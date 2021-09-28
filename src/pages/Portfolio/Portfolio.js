@@ -5,6 +5,7 @@ import gyeezyimg from './image/gyeezyimg.jpg'
 import weather from './image/weather.png'
 import techblog from './image/techblog.png'
 import passwordgen from './image/passwordgen.png'
+import SCMarketplace from './image/SCMarketplace.jpg'
 import { FaGithub } from 'react-icons/fa';
 import {
   Container,
@@ -58,7 +59,7 @@ const Portfolio = (props) => {
         </Col>
         <Col md='6' lg='4'>
           <Card inverse style={styles.cardback}>
-            <CardImg width="100%" height='240px' src={E2A} alt="bets" />
+            <CardImg width="100%" height='240px' src={SCMarketplace} alt="SCMarketplace" />
             <CardTitle tag="h5"><a href='https://arcane-woodland-37998.herokuapp.com/' target='_blank' style={styles.links}>SoCal-Marketplace  </a>
               <a href='https://github.com/armin-ch/SoCal-Marketplace' target='_blank' style={styles.links}><FaGithub /></a>
             </CardTitle>
@@ -113,7 +114,7 @@ const Portfolio = (props) => {
         </Col>
         <Col md='6' lg='4'>
           <Card inverse style={styles.cardback}>
-            <CardImg width="100%" height='240px' src={passwordgen} alt="password" />
+            <CardImg width="100%" height='240px' src={gyeezyimg} alt="game" />
             <CardTitle tag="h5"><a href='https://github.com/WellsWu4621/' target='_blank' style={styles.links}>Game(Work in Progress)  </a>
               <a href='https://github.com/WellsWu4621/' target='_blank' style={styles.links}><FaGithub /></a>
             </CardTitle>
