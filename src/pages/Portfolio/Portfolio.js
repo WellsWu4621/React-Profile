@@ -58,6 +58,17 @@ const Portfolio = (props) => {
         </Col>
         <Col md='6' lg='4'>
           <Card inverse style={styles.cardback}>
+            <CardImg width="100%" height='240px' src={E2A} alt="bets" />
+            <CardTitle tag="h5"><a href='https://arcane-woodland-37998.herokuapp.com/' target='_blank' style={styles.links}>SoCal-Marketplace  </a>
+              <a href='https://github.com/armin-ch/SoCal-Marketplace' target='_blank' style={styles.links}><FaGithub /></a>
+            </CardTitle>
+            <CardBody>
+              <small className="text-info">A marketplace website.</small>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col md='6' lg='4'>
+          <Card inverse style={styles.cardback}>
             <CardImg width="100%" height='240px' src={bonus} alt="employee tracker" />
             <CardTitle tag="h5"><a href='https://github.com/WellsWu4621/Employee-Tracker' target='_blank' style={styles.links}>Employee Tracker  </a>
               <a href='https://github.com/WellsWu4621/Employee-Tracker' target='_blank' style={styles.links}><FaGithub /></a>
@@ -97,6 +108,17 @@ const Portfolio = (props) => {
             </CardTitle>
             <CardBody>
               <small className="text-info">A password generator</small>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col md='6' lg='4'>
+          <Card inverse style={styles.cardback}>
+            <CardImg width="100%" height='240px' src={passwordgen} alt="password" />
+            <CardTitle tag="h5"><a href='https://github.com/WellsWu4621/' target='_blank' style={styles.links}>Game(Work in Progress)  </a>
+              <a href='https://github.com/WellsWu4621/' target='_blank' style={styles.links}><FaGithub /></a>
+            </CardTitle>
+            <CardBody>
+              <small className="text-info">Game using Javascript</small>
             </CardBody>
           </Card>
         </Col>

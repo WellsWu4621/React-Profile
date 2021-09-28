@@ -7,8 +7,7 @@ const styles = {
     marginRight: 10,
   },
   center: {
-    position: 'absolute', left: '50%', top: '95%',
-    transform: 'translate(-50%, -50%)'
+    position: 'fixed', left: '47%', bottom: '0%',
   }
 }
 

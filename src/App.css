@@ -1,3 +1,15 @@
+/* .back {
+  background-image: url(./images/keyb.png);
+  height: 100%;
+  background-size: cover;
+} */
+html { 
+  background: url(./images/keyb.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /* html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -74,8 +86,3 @@
     -o-transform: translateY(-2000px);
 }
 } */
-
-.back {
-  background-image: url(./images/keyb.png);
-  height: 100vh;
-}

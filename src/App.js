@@ -16,7 +16,6 @@ const App = () => {
 
   return (
     <Router>
-      <div className='back'>
         <Appbar />
         <Switch>
           <Route path='/portfolio'>
@@ -33,7 +32,6 @@ const App = () => {
           </Route>
         </Switch>
         <Footer />
-      </div>
     </Router>
   )
 }
